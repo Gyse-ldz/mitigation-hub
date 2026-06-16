@@ -52,7 +52,7 @@ El sistema sigue una arquitectura distribuida orientada a eventos.
   <img src="SQL_IncidentLogTabla.jpg" width="1000">
 </p>
 
-### Esquema relacional diseñado para garantizar la trazabilidad completa y la persistencia transaccional de los eventos.
+Esquema relacional diseñado para normalizar los datos de telemetría y garantizar la trazabilidad completa, permitiendo auditorías rápidas y la persistencia transaccional de cada evento detectado.
 
 <p align="center">
   <img src="VC_Terminal_Escuchando.jpg" width="1000">
@@ -64,7 +64,8 @@ Visualización del backend en operación, escuchando eventos y gestionando conex
 
 ​Sometimos el sistema a pruebas de carga masiva para validar su comportamiento ante picos de telemetría, asegurando resiliencia mediante Polly y una arquitectura orientada a eventos.
 
-### Dashboard en tiempo real mostrando la estabilidad operativa del sistema bajo alta carga.
+Dashboard en tiempo real mostrando la estabilidad operativa bajo alta carga. Se observa cómo el sistema mantiene el throughput constante sin degradación del servicio a pesar de la inyección masiva de eventos.
+​Detalle del monitoreo de flujo en tiempo real durante la simulación: aquí validamos que el buffer y las estrategias de reintento gestionan correctamente los picos de telemetría sin pérdida de paquetes.
 
 <p align="center">
   <img src="SecOps_275_Hilos.jpg" width="1000">
@@ -80,7 +81,13 @@ Detalle del monitoreo de flujo en tiempo real durante la simulación de eventos 
 
 ​El ciclo de vida del incidente incluye la detección automática, respuesta técnica y mecanismos de recuperación para asegurar la continuidad del servicio ante amenazas reales.
 
-### Prueba de estrés: visualización del procesamiento masivo y capacidad de respuesta del sistema.
+### Prueba de estrés: 
+
+El backend procesa ráfagas de datos en tiempo real, demostrando un uso eficiente de hilos y gestión asíncrona de recursos.
+
+​Acción de contención: ejecución de respuestas automatizadas. En este escenario, el sistema detecta patrones anómalos y aplica una política de contención definida, bloqueando las amenazas detectadas en el flujo y protegiendo el núcleo de la aplicación.
+
+​Estado post-incidente: tras la neutralización, los mecanismos de limpieza se ejecutan de forma autónoma, garantizando que el sistema regrese a un estado estable sin intervención manual, reduciendo el tiempo de recuperación (MTTR).
 
 <p align="center">
   <img src="VC_Terminal_Rafagas_Con_Exito.jpg" width="1000">
