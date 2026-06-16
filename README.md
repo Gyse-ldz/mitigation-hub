@@ -21,6 +21,14 @@ El proyecto implementa una arquitectura desacoplada de alto rendimiento basada e
 
 El sistema sigue una arquitectura distribuida orientada a eventos.
 
+### 🏗️ Arquitectura de Datos
+```mermaid
+graph LR
+    A[API Controller] --> B(RabbitMQ)
+    B --> C[Worker Service]
+    C --> D[(SQL Server)]
+
+
 ### Componentes principales
 
 - **Backend:** .NET 10
@@ -135,6 +143,14 @@ Una vez neutralizada la amenaza, el sistema ejecuta de forma autónoma rutinas d
 * **Telemetría de eventos:** Monitoreo del flujo mediante Application Insights (o la herramienta que uses).
 * **Dashboard en tiempo real:** Visualización centralizada para monitoreo de KPI operativos.
 ---
+### 🛠️ Desafíos Técnicos Resueltos
+Durante el desarrollo del sistema, se superaron obstáculos críticos para garantizar la estabilidad operativa:
+
+* **Gestión de Concurrencia:** Se neutralizaron condiciones de carrera (Race Conditions) generadas durante ráfagas de 25 peticiones HTTP/ms mediante validación asíncrona temprana y bloqueo de hilos.
+* **Integridad de Datos:** Se resolvió la desalineación de tipos de datos entre el `ulong` de Discord y el `BIGINT` de SQL Server mediante el uso de `DynamicParameters` en Dapper, asegurando la precisión transaccional.
+* **Serialización Segura:** Se optimizó la transferencia de datos configurando `PropertyNameCaseInsensitive` para evitar errores de deserialización en las respuestas de la API.
+
+---
 
 ### 🚀 Cómo Ejecutar el Proyecto
 Para desplegar este entorno de pruebas y monitoreo en tu máquina local, sigue estos pasos:
@@ -155,6 +171,19 @@ Para desplegar este entorno de pruebas y monitoreo en tu máquina local, sigue e
      ```
    * El sistema iniciará automáticamente el servicio de escucha y el dashboard estará listo para recibir telemetría.
 
+---
+
+### 📊 Estado del Proyecto
+Este sistema ha sido diseñado siguiendo una hoja de ruta estructurada para garantizar robustez:
+
+| Componente | Estado | Tecnología Principal |
+| :--- | :--- | :--- |
+| **Resiliencia** | Completado | Polly v8 (Circuit Breaker) |
+| **Seguridad de Datos** | Completado | Data Protection API (AES-256-GCM) |
+| **Mensajería** | Completado | RabbitMQ (Asíncrono) |
+| **Persistencia** | Completado | Dapper & SQL Server |
+
+---
 
 # 📈 Resultados Alcanzados
 
