@@ -34,9 +34,18 @@ El sistema sigue una arquitectura distribuida orientada a eventos.
 ## Arquitectura de Flujo de Datos
 
 ​El sistema opera bajo un modelo de procesamiento desacoplado diseñado para alta disponibilidad y baja latencia:
-​Ingesta (API Controller): Recibe el tráfico de telemetría y, mediante un controlador asincrónico, delega la carga inmediatamente a la capa de mensajería, liberando recursos del servidor.
-​Buffer de Procesamiento (RabbitMQ): Actúa como un amortiguador de alta velocidad que organiza y encola los eventos, evitando que los picos de tráfico afecten la persistencia.
-​Persistencia (Worker Service + SQL Server): El servicio de fondo consume los mensajes de la cola y realiza la escritura en la base de datos de manera atómica, garantizando la integridad de los registros sin bloquear la entrada de nuevos datos.
+
+## 1.Ingesta (API Controller): 
+
+Recibe el tráfico de telemetría y, mediante un controlador asincrónico, delega la carga inmediatamente a la capa de mensajería, liberando recursos del servidor.
+
+## 2.Buffer de Procesamiento (RabbitMQ):
+
+Actúa como un amortiguador de alta velocidad que organiza y encola los eventos, evitando que los picos de tráfico afecten la persistencia.
+
+## 3.Persistencia (Worker Service + SQL Server): 
+
+El servicio de fondo consume los mensajes de la cola y realiza la escritura en la base de datos de manera atómica, garantizando la integridad de los registros sin bloquear la entrada de nuevos datos.
 
 ---
 
