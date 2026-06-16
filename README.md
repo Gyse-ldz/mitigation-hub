@@ -161,7 +161,7 @@ Una vez neutralizada la amenaza, el sistema ejecuta de forma autónoma rutinas d
 
 - Security Operations Center (SOC)
 - SIEM
-- SOAR
+- SOAR Recuperación ante desastres
 - Correlación de eventos
 - Respuesta automática a incidentes
 - Monitoreo corporativo
