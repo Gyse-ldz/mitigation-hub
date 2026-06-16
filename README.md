@@ -134,8 +134,28 @@ Una vez neutralizada la amenaza, el sistema ejecuta de forma autónoma rutinas d
 * **Registro estructurado:** Implementado con Serilog para trazabilidad completa.
 * **Telemetría de eventos:** Monitoreo del flujo mediante Application Insights (o la herramienta que uses).
 * **Dashboard en tiempo real:** Visualización centralizada para monitoreo de KPI operativos.
-
+* 
 ---
+
+### 🚀 Cómo Ejecutar el Proyecto
+Para desplegar este entorno de pruebas y monitoreo en tu máquina local, sigue estos pasos:
+
+1. **Requisitos Previos**:
+   * Tener instalado [.NET 10 SDK](https://dotnet.microsoft.com/download).
+   * Contar con una instancia de [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) activa.
+   * Tener [RabbitMQ](https://www.rabbitmq.com/download.html) instalado y corriendo.
+
+2. **Configuración**:
+   * Clona el repositorio: `git clone https://github.com/Gyse-Idz/mitigacion-h.git`
+   * Configura la cadena de conexión en el archivo `appsettings.json` apuntando a tu instancia de SQL Server.
+
+3. **Ejecución**:
+   * Navega hasta la carpeta raíz del proyecto y ejecuta:
+     ```bash
+     dotnet run
+     ```
+   * El sistema iniciará automáticamente el servicio de escucha y el dashboard estará listo para recibir telemetría.
+
 
 # 📈 Resultados Alcanzados
 
