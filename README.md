@@ -165,7 +165,7 @@ Una vez neutralizada la amenaza, el sistema ejecuta de forma autónoma rutinas d
 - Correlación de eventos
 - Respuesta automática a incidentes
 - Monitoreo corporativo
-- Laboratorios de ciberseguridad
+- Laboratorios de Ciberseguridad
 
 ---
 
