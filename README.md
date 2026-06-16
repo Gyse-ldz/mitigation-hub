@@ -134,7 +134,6 @@ Una vez neutralizada la amenaza, el sistema ejecuta de forma autónoma rutinas d
 * **Registro estructurado:** Implementado con Serilog para trazabilidad completa.
 * **Telemetría de eventos:** Monitoreo del flujo mediante Application Insights (o la herramienta que uses).
 * **Dashboard en tiempo real:** Visualización centralizada para monitoreo de KPI operativos.
-* 
 ---
 
 ### 🚀 Cómo Ejecutar el Proyecto
