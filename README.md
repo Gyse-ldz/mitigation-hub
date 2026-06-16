@@ -66,98 +66,36 @@ Visualización del backend en operación, escuchando eventos y gestionando conex
 
 Dashboard en tiempo real mostrando la estabilidad operativa del sistema bajo alta carga.
 
-
-Detalle del monitoreo de flujo en tiempo real durante la simulación de eventos masivos.
-
-🛡️ Procesamiento y Mitigación
-​El ciclo de vida del incidente incluye la detección automática, respuesta técnica y mecanismos de recuperación para asegurar la continuidad del servicio ante amenazas reales.
-
-Prueba de estrés: visualización del procesamiento masivo y capacidad de respuesta del sistema.
-
-Acción de contención: ejecución de respuestas automatizadas para neutralizar amenazas detectadas en el flujo.
-
-Estado post-incidente: mecanismos de limpieza y estabilización automática para el retorno al flujo operativo normal.
-
-
-
-
-
 <p align="center">
   <img src="SecOps_275_Hilos.jpg" width="1000">
 </p>
 
-**Resultado:**
+Detalle del monitoreo de flujo en tiempo real durante la simulación de eventos masivos.
 
-- Procesamiento simultáneo de cientos de eventos.
-- Sin pérdida de mensajes.
-- Persistencia consistente.
-- Dashboard actualizado en tiempo real.
+<p align="center">
+  <img src="Mitad_De_Rafaga.jpg" width="1000">
+</p>
 
----
+🛡️ Procesamiento y Mitigación
 
-# 📡 Servicio en Ejecución
+​El ciclo de vida del incidente incluye la detección automática, respuesta técnica y mecanismos de recuperación para asegurar la continuidad del servicio ante amenazas reales.
 
-Backend escuchando eventos y conexiones entrantes.
-
-
-# ⚡ Procesamiento de Ráfagas
-
-Prueba de estrés mediante envío masivo de eventos.
+Prueba de estrés: visualización del procesamiento masivo y capacidad de respuesta del sistema.
 
 <p align="center">
   <img src="VC_Terminal_Rafagas_Con_Exito.jpg" width="1000">
 </p>
 
-El sistema mantiene estabilidad operativa incluso bajo picos abruptos de carga.
-
----
-
-# 🧹 Recuperación y Limpieza
-
-Mecanismos de limpieza y estabilización posteriores al procesamiento.
-
-<p align="center">
-  <img src="Terminal_Limpia.jpg" width="1000">
-</p>
-
----
-
-# 🗄️ Persistencia de Incidentes
-
-Todos los eventos procesados son almacenados para auditoría y análisis posterior.
-
-
-Características:
-
-- Persistencia transaccional.
-- Trazabilidad completa.
-- Evidencia para investigaciones.
-- Base para correlación futura.
-
----
-
-# 🛑 Mitigación Automática
-
-El sistema incorpora acciones de respuesta automatizada para contener amenazas detectadas.
+Acción de contención: ejecución de respuestas automatizadas para neutralizar amenazas detectadas en el flujo.
 
 <p align="center">
   <img src="Boton_Frenar.jpg" width="700">
 </p>
 
-Funcionalidades:
-
-- Contención de incidentes.
-- Interrupción controlada de flujos.
-- Respuesta inmediata ante eventos críticos.
-
----
-
-# 🔥 Procesamiento Parcial de Ráfagas
-
-Visualización de ejecución durante escenarios de carga continua.
+Estado post-incidente: mecanismos de limpieza y estabilización automática para el retorno al flujo operativo normal.
 
 <p align="center">
-  <img src="Mitad_De_Rafaga.jpg" width="1000">
+  <img src="Terminal_Limpia.jpg" width="1000">
 </p>
 
 ---
