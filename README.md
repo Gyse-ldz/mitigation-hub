@@ -181,7 +181,6 @@ Certificaciones:
 - IBM Artificial Intelligence 
 - Microsoft Learn
 - Microsoft Playwright Testing
-
 ---
 
 ## ⭐ Si te resulta interesante este proyecto
