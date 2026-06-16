@@ -44,7 +44,7 @@ El sistema sigue una arquitectura distribuida orientada a eventos.
 
 ---
 
-​🏗️ Arquitectura y Modelo de Datos
+## Arquitectura y Modelo de Datos
 
 ​El sistema implementa una arquitectura desacoplada de alto rendimiento. Para garantizar la integridad en la respuesta ante incidentes, se diseñó un modelo de datos robusto persistido en SQL Server.
 
@@ -52,7 +52,7 @@ El sistema sigue una arquitectura distribuida orientada a eventos.
   <img src="SQL_IncidentLogTabla.jpg" width="1000">
 </p>
 
-Esquema relacional diseñado para garantizar la trazabilidad completa y la persistencia transaccional de los eventos.
+### Esquema relacional diseñado para garantizar la trazabilidad completa y la persistencia transaccional de los eventos.
 
 <p align="center">
   <img src="VC_Terminal_Escuchando.jpg" width="1000">
@@ -60,11 +60,11 @@ Esquema relacional diseñado para garantizar la trazabilidad completa y la persi
 
 Visualización del backend en operación, escuchando eventos y gestionando conexiones entrantes de manera asíncrona.
 
-🚀 Pruebas de Alta Concurrencia
+## 🚀 Pruebas de Alta Concurrencia
 
 ​Sometimos el sistema a pruebas de carga masiva para validar su comportamiento ante picos de telemetría, asegurando resiliencia mediante Polly y una arquitectura orientada a eventos.
 
-Dashboard en tiempo real mostrando la estabilidad operativa del sistema bajo alta carga.
+### Dashboard en tiempo real mostrando la estabilidad operativa del sistema bajo alta carga.
 
 <p align="center">
   <img src="SecOps_275_Hilos.jpg" width="1000">
@@ -76,23 +76,23 @@ Detalle del monitoreo de flujo en tiempo real durante la simulación de eventos 
   <img src="Mitad_De_Rafaga.jpg" width="1000">
 </p>
 
-🛡️ Procesamiento y Mitigación
+## 🛡️ Procesamiento y Mitigación
 
 ​El ciclo de vida del incidente incluye la detección automática, respuesta técnica y mecanismos de recuperación para asegurar la continuidad del servicio ante amenazas reales.
 
-Prueba de estrés: visualización del procesamiento masivo y capacidad de respuesta del sistema.
+### Prueba de estrés: visualización del procesamiento masivo y capacidad de respuesta del sistema.
 
 <p align="center">
   <img src="VC_Terminal_Rafagas_Con_Exito.jpg" width="1000">
 </p>
 
-Acción de contención: ejecución de respuestas automatizadas para neutralizar amenazas detectadas en el flujo.
+### Acción de contención: ejecución de respuestas automatizadas para neutralizar amenazas detectadas en el flujo.
 
 <p align="center">
   <img src="Boton_Frenar.jpg" width="700">
 </p>
 
-Estado post-incidente: mecanismos de limpieza y estabilización automática para el retorno al flujo operativo normal.
+### Estado post-incidente: mecanismos de limpieza y estabilización automática para el retorno al flujo operativo normal.
 
 <p align="center">
   <img src="Terminal_Limpia.jpg" width="1000">
