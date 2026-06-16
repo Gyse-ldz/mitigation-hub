@@ -54,10 +54,11 @@ El sistema sigue una arquitectura distribuida orientada a eventos.
 
 Esquema relacional diseñado para garantizar la trazabilidad completa y la persistencia transaccional de los eventos.
 
-
+<p align="center">
+  <img src="VC_Terminal_Escuchando.jpg" width="1000">
+</p>
 
 Visualización del backend en operación, escuchando eventos y gestionando conexiones entrantes de manera asíncrona.
-
 
 🚀 Pruebas de Alta Concurrencia
 
@@ -98,11 +99,6 @@ Estado post-incidente: mecanismos de limpieza y estabilización automática para
 
 Backend escuchando eventos y conexiones entrantes.
 
-<p align="center">
-  <img src="VC_Terminal_Escuchando.jpg" width="1000">
-</p>
-
----
 
 # ⚡ Procesamiento de Ráfagas
 
