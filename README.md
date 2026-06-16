@@ -1,6 +1,6 @@
 # Proyecto SecOps-SIEM-SOAR
 
-🛡️ ## Descripción del Proyecto
+🛡️ ##Descripción del Proyecto
 Arquitectura de seguridad corporativa diseñada para la detección, análisis y respuesta automatizada ante incidentes (SOAR). El sistema implementa un ecosistema desacoplado que garantiza la ingesta masiva de telemetría, persistencia inmutable y respuesta en tiempo real.
 
 ##🏗️ Arquitectura del Sistema
