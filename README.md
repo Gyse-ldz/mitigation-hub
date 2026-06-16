@@ -31,6 +31,18 @@ El sistema sigue una arquitectura distribuida orientada a eventos.
 - **Resiliencia:** Polly
 - **Patrones:** Circuit Breaker, Retry, Failover
 
+graph TD
+    A[Cliente / Telemetría] -->|HTTP/REST| B[API Service .NET 10]
+    B -->|Publish| C{RabbitMQ Queue}
+    C -->|Consume| D[Worker Service - SecOps]
+    D -->|Persist| E[(SQL Server 17)]
+    D -->|SignalR Hub| F[Dashboard Frontend]
+    D -->|Mitigate| G[Control de Acceso]
+    
+    subgraph Resiliencia
+    D -.->|Polly Policy| H[Circuit Breaker/Retry]
+    end
+
 ---
 
 ## 🔄 Flujo de Procesamiento
