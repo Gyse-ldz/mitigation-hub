@@ -71,7 +71,7 @@ Dashboard en tiempo real mostrando la estabilidad operativa bajo alta carga. Se 
   <img src="SecOps_275_Hilos.jpg" width="1000">
 </p>
 
-Detalle del monitoreo de flujo en tiempo real durante la simulación de eventos masivos.
+Dashboard de métricas durante el pico máximo de concurrencia.
 
 <p align="center">
   <img src="Mitad_De_Rafaga.jpg" width="1000">
