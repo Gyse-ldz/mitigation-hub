@@ -111,30 +111,25 @@ Una vez neutralizada la amenaza, el sistema ejecuta de forma autónoma rutinas d
 
 ---
 
-# 🧠 Características Técnicas
+### 🧠 Características Técnicas
 
-### Backend
+**Backend**
+* **Framework**: .NET 10, ASP.NET Core
+* **Comunicación en Tiempo Real**: SignalR
+* **ORM**: Dapper
+* **Base de Datos**: SQL Server
 
-- .NET 10
-- ASP.NET Core
-- SignalR
-- Dapper
-- SQL Server
+**Mensajería y Eventos**
+* **Broker**: RabbitMQ
+* **Arquitectura**: Productores y consumidores desacoplados
+* **Procesamiento**: Asíncrono de alto rendimiento
 
-### Mensajería
+**Resiliencia**
+* **Gestión de Fallos**: Polly
+* **Patrones**: Circuit Breaker (Cortocircuitos), Políticas de reintento (Retry)
+* **Alta Disponibilidad**: Estrategias de Failover híbrido
 
-- RabbitMQ
-- Productores y consumidores desacoplados
-- Procesamiento asíncrono
-
-### Resiliencia
-
-- Polly
-- Circuit Breaker
-- Retry Policy
-- Failover híbrido
-
-### Observabilidad
+**Observabilidad**
 
 - Logging estructurado
 - Telemetría de eventos
