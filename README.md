@@ -95,11 +95,15 @@ El backend procesa ráfagas de datos en tiempo real, demostrando un uso eficient
 
 ### Acción de contención: ejecución de respuestas automatizadas para neutralizar amenazas detectadas en el flujo.
 
+Esta fase demuestra la capacidad de respuesta proactiva del sistema. Al identificar patrones de tráfico malicioso en tiempo real, el motor de seguridad dispara automáticamente protocolos de contención. En la captura se observa el momento preciso en que se bloquean las conexiones no autorizadas, aislando la amenaza sin interrumpir el procesamiento del tráfico legítimo.
+
 <p align="center">
   <img src="Boton_Frenar.jpg" width="700">
 </p>
 
 ### Estado post-incidente: mecanismos de limpieza y estabilización automática para el retorno al flujo operativo normal.
+
+Una vez neutralizada la amenaza, el sistema ejecuta de forma autónoma rutinas de saneamiento de datos y liberación de recursos. Esto asegura la integridad del estado operativo, permitiendo que el servicio recupere su latencia y niveles de disponibilidad óptimos en milisegundos, reduciendo así al mínimo el impacto operativo y el tiempo de respuesta ante incidentes (MTTR).
 
 <p align="center">
   <img src="Terminal_Limpia.jpg" width="1000">
