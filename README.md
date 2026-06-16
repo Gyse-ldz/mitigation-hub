@@ -207,8 +207,8 @@ Cybersecurity | .NET Developer | SIEM/SOAR Engineering
 
 Certificaciones:
 
-- IBM Cybersecurity Fundamentals
-- IBM Artificial Intelligence Fundamentals
+- IBM Cybersecurity 
+- IBM Artificial Intelligence 
 - Microsoft Learn
 - Microsoft Playwright Testing
 
