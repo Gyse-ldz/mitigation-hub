@@ -21,14 +21,6 @@ El proyecto implementa una arquitectura desacoplada de alto rendimiento basada e
 
 El sistema sigue una arquitectura distribuida orientada a eventos.
 
-### 🏗️ Arquitectura de Datos
-```mermaid
-graph LR
-    A[API Controller] --> B(RabbitMQ)
-    B --> C[Worker Service]
-    C --> D[(SQL Server)]
-
-
 ### Componentes principales
 
 - **Backend:** .NET 10
