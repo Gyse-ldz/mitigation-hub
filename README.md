@@ -44,9 +44,42 @@ El sistema sigue una arquitectura distribuida orientada a eventos.
 
 ---
 
-# 🚀 Simulación de Alta Concurrencia
+​🏗️ Arquitectura y Modelo de Datos
 
-El sistema fue sometido a pruebas de carga mediante generación masiva de eventos concurrentes.
+​El sistema implementa una arquitectura desacoplada de alto rendimiento. Para garantizar la integridad en la respuesta ante incidentes, se diseñó un modelo de datos robusto persistido en SQL Server.
+
+<p align="center">
+  <img src="SQL_IncidentLogTabla.jpg" width="1000">
+</p>
+
+Esquema relacional diseñado para garantizar la trazabilidad completa y la persistencia transaccional de los eventos.
+
+
+
+Visualización del backend en operación, escuchando eventos y gestionando conexiones entrantes de manera asíncrona.
+
+
+🚀 Pruebas de Alta Concurrencia
+
+​Sometimos el sistema a pruebas de carga masiva para validar su comportamiento ante picos de telemetría, asegurando resiliencia mediante Polly y una arquitectura orientada a eventos.
+
+Dashboard en tiempo real mostrando la estabilidad operativa del sistema bajo alta carga.
+
+
+Detalle del monitoreo de flujo en tiempo real durante la simulación de eventos masivos.
+
+🛡️ Procesamiento y Mitigación
+​El ciclo de vida del incidente incluye la detección automática, respuesta técnica y mecanismos de recuperación para asegurar la continuidad del servicio ante amenazas reales.
+
+Prueba de estrés: visualización del procesamiento masivo y capacidad de respuesta del sistema.
+
+Acción de contención: ejecución de respuestas automatizadas para neutralizar amenazas detectadas en el flujo.
+
+Estado post-incidente: mecanismos de limpieza y estabilización automática para el retorno al flujo operativo normal.
+
+
+
+
 
 <p align="center">
   <img src="SecOps_275_Hilos.jpg" width="1000">
@@ -97,9 +130,6 @@ Mecanismos de limpieza y estabilización posteriores al procesamiento.
 
 Todos los eventos procesados son almacenados para auditoría y análisis posterior.
 
-<p align="center">
-  <img src="SQL_IncidentLogTabla.jpg" width="1000">
-</p>
 
 Características:
 
