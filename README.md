@@ -24,4 +24,5 @@ Arquitectura de seguridad corporativa diseñada para la detección, análisis y 
 
 ---
 **Estado del Proyecto:** Versión funcional.
+
 **Autor:** Gisela Estefania Ortiz.
